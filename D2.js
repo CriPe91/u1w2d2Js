@@ -5,7 +5,11 @@
 const num1 = 6;
 const num2 = 4;
 
-console.log(num1 > num2);
+if (num1 > num2) {
+  console.log("il numero più grande è ", num1);
+} else if (num1 < num2) {
+  console.log("il numero più grande è", num2);
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -13,15 +17,15 @@ console.log(num1 > num2);
 
 if (num1 !== 5) {
   console.log("not equal");
-} else {
-  console.log("great!");
-}
+
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-console.log("15 è divisibile per 5?", 15 % 5 === 0);
+let z = 15
+if (z % 5 === 0)
+console.log("divisibile per 5");
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -41,6 +45,14 @@ if (num3 === 8 || num3 + num4 === 8 || num3 - num4 === 8) {
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
+let totalShoppingCart = 60
+let spedition = 10
+amountToPay = totalShoppingCart
+
+if (totalShoppingCart < 50) {
+amountToPay += spedition
+}
+console.log("totale da pagare:", amountToPay);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -57,9 +69,6 @@ if (num3 === 8 || num3 + num4 === 8 || num3 - num4 === 8) {
   Alla fine mostra il risultato in console.
 */
 
-let num7 = 7;
-let num5 = 5;
-let num6 = 6;
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
